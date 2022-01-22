@@ -1,5 +1,5 @@
-export * from './add'
-export * from './ramda'
+export * from "./add"
+export * from "./ramda"
 export const foo = "foo"
-export * from './react-component/count'
-
+import Counter from "./react-component/count"
+export { Counter }
