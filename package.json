@@ -1,7 +1,7 @@
 {
-  "name": "my-ts-lib",
+  "name": "test-tsup",
   "version": "0.0.0",
-  "description": "My awesome typescript library",
+  "description": "a test suite for tsup",
   "publishConfig": {
     "access": "public"
   },
@@ -16,7 +16,7 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build-fast": "tsup src/index.ts --format cjs,esm",
+    "build-fast": "tsup src/index.ts --format esm,cjs",
     "build": "pnpm run build-fast -- --dts-resolve",
     "test": "vitest run",
     "prepublishOnly": "pnpm run build"
